@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: #201DBC;
+}
+body {
+    font-family: britannic bold, bookshelf symbol 7, sans-serif;
+}
+/* Grid to place images and gap of 96 to divide them accross the screen*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 40px);
+    gap: 96px;
+}
+/* haeder placed center with a padding to breath */
+header{
+    height: 104px;
+    background-color: aliceblue;
+    font-size: 48px;
+    text-decoration: none;
+    padding-top: 40px;
+    justify-content: center;
+    width: 100%;
+}
+/* header is placed over all 12 columns and in center of them */
+header h1{
+    grid-column: span 12;
+    justify-self: center;
+    background-color: aliceblue;
+    color: #201DBC;
+}
+/* first and second row for movie posters */
+first-row{
+    max-width: 506px;
+    margin: 32px auto;
+    justify-self: center;
+}
+second-row{
+    max-width: 506px;
+    margin: 32px auto;
+    justify-self: center;
+}
